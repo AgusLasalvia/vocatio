@@ -54,6 +54,11 @@ const SignUpPage = () => {
         <section className="signup">
             <div className="signup-main-container fade-in-up">
                 <div className="signup-inner-left">
+                    <div className="signup-top-container">
+                        <a href="/" className="login-back-btn">
+                            <i><img src="/icons/arrow-left.png" alt="" /></i>
+                        </a>
+                    </div>
                     <h1>Sign Up</h1>
                     <div className="signup-form">
                         <div className="form-group">
