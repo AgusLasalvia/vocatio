@@ -2,22 +2,8 @@
 
 import "@styles/Navbar.css";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-
 
 const Navbar = () => {
-
-    const pathname = usePathname();
-
-    const noNavbarRoutes = [
-        "/auth/login",
-        "/auth/signup",
-        "/auth/recovery"];
-
-    const hideNavbar = noNavbarRoutes.includes(pathname);
-
-
-    if (hideNavbar) return null;
 
     return (
         <nav>

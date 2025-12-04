@@ -1,7 +1,10 @@
+import Navbar from "@/components/ui/desktop/Navbar";
 import "./page.css"
 
 const HomePage = () => {
-  return (
+  return (<>
+   
+
     <section className="home-hero-section">
       <h1>The simplest way to manage people, donations and events</h1>
       <p>One Platform. One unified solution.</p>
@@ -11,6 +14,7 @@ const HomePage = () => {
         <a className="cta-pricing btn bg-secondary" href="/pricing">Pricing</a>
       </div>
     </section>
+  </>
   )
 }
 
