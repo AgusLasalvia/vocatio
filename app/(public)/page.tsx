@@ -3,10 +3,10 @@ import "./page.css"
 
 const HomePage = () => {
   return (<>
-   
+
 
     <section className="home-hero-section">
-      <h1>The simplest way to manage people, donations and events</h1>
+      <h1>The simplest way to manage people, transactions and events</h1>
       <p>One Platform. One unified solution.</p>
 
       <div className="cta-btns-container">

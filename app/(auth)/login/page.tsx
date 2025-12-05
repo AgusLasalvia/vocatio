@@ -28,11 +28,9 @@ const LoginPage = () => {
             }
         )
         if (!response.ok) {
+            alert(response.statusText)
+        }
 
-        }
-        if (response.status == 404) {
-            alert("User not found")
-        }
     }
 
     return (
@@ -72,9 +70,8 @@ const LoginPage = () => {
 
                         <div className="signup-redirect">
                             <p>Don't have an account?</p>
-                            <a href="/auth/signup">Sign Up</a>
+                            <a href="/signup">Sign Up</a>
                         </div>
-
                     </div>
                 </div>
                 <figure className="login-banner">

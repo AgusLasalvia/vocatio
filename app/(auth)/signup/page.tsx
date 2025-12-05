@@ -117,7 +117,7 @@ const SignUpPage = () => {
 
                     <div className="login-redirect">
                         <p>Already have an account?</p>
-                        <a href="/auth/login">Sign In</a>
+                        <a href="/login">Sign In</a>
                     </div>
 
 
