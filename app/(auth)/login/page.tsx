@@ -66,7 +66,7 @@ const LoginPage = () => {
                         <input className="form-submit-btn" type="submit" onClickCapture={handdleSubmit} value="Log In" />
                     </div>
                     <div className="login-extra-links">
-                        <a href="/auth/recovery">Forgot your Password?</a>
+                        <a href="/recovery">Forgot your Password?</a>
 
                         <div className="signup-redirect">
                             <p>Don't have an account?</p>

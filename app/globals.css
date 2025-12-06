@@ -18,13 +18,11 @@ body,
 html {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100%;
+    width: 100% !important;
 }
 
 
 body {
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -32,6 +30,26 @@ body {
     background-color: white;
     background-image: url("/assets/background.png");
     background-repeat: repeat;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 890px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
 
 

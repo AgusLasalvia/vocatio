@@ -80,6 +80,15 @@ const SignUpPage = () => {
                                 onChange={(e) => setSignupForm({ ...signupForm, lastName: e.target.value })} />
                         </div>
                         <div className="form-group">
+                            <i><img src="/icons/envelope.png" alt="pencil icon" /></i>
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                value={signupForm.email}
+                                maxLength={30}
+                                onChange={(e) => setSignupForm({ ...signupForm, email: e.target.value })} />
+                        </div>
+                        <div className="form-group">
                             <i><img src="/icons/user-icon.png" alt="user icon" /></i>
                             <input
                                 type="text"

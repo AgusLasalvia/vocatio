@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 import Navbar from "@/components/ui/desktop/Navbar";
+import Hamburguer from "@/components/ui/mobile/Hamburguer";
 
 export const metadata = {
   title: "Blumenfeld Project",
@@ -19,7 +20,10 @@ export default function RootLayout({
         <title>Blumenfeld Project</title>
       </head>
       <body >
-        <Navbar />
+        <header>
+          <Hamburguer />
+          <Navbar />
+        </header>
         {children}
       </body>
     </html>
