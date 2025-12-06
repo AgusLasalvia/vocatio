@@ -1,4 +1,5 @@
 import "@/app/globals.css";
+import SideBar from "@/components/ui/desktop/Sidebar";
 
 export const metadata = {
     title: "Blumenfeld Project",
@@ -19,6 +20,7 @@ export default function RootLayout({
             </head>
             <body >
                 {/* Sidebar here */}
+                <SideBar />
                 {children}
             </body>
         </html>

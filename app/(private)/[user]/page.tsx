@@ -1,5 +1,5 @@
 const UserMainDashboardPage = () => {
-    return <></>
+    return <>Hola</>
 }
 
 export default UserMainDashboardPage;
