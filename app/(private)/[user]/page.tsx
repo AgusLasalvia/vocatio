@@ -1,5 +1,11 @@
+import "./page.css"
+
 const UserMainDashboardPage = () => {
-    return <>Hola</>
+    return (
+        <section className="dashboard-section">
+            aaa
+        </section>
+    )
 }
 
 export default UserMainDashboardPage;

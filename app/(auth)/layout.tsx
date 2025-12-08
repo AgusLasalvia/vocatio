@@ -5,11 +5,11 @@ export const metadata = {
     description: "Project management tool",
 };
 
-export default function RootLayout({
+const AuthLayout = ({
     children,
 }: Readonly<{
     children: React.ReactNode;
-}>) {
+}>) => {
 
 
     return (
@@ -23,3 +23,6 @@ export default function RootLayout({
         </html>
     );
 }
+
+
+export default AuthLayout;

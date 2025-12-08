@@ -1,0 +1,18 @@
+.pricing-section {
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 20px;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-section h2 {
+    font-family: 'Ibarra Real Nova' !important;
+    font-size: 45px;
+    font-weight: 100;
+    max-width: 780px;
+    text-align: center;
+}

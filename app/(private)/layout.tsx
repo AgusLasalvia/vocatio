@@ -1,4 +1,5 @@
 import "@/app/globals.css";
+
 import SideBar from "@/components/ui/desktop/Sidebar";
 
 export const metadata = {
@@ -6,12 +7,11 @@ export const metadata = {
     description: "Project management tool",
 };
 
-export default function RootLayout({
+const UserLayout = ({
     children,
 }: Readonly<{
     children: React.ReactNode;
-}>) {
-
+}>) => {
 
     return (
         <html lang="en">
@@ -19,6 +19,10 @@ export default function RootLayout({
                 <title>Blumenfeld Project</title>
             </head>
             <body >
+                <header>
+                    <input type="text" />
+                </header>
+
                 {/* Sidebar here */}
                 <SideBar />
                 {children}
@@ -26,3 +30,6 @@ export default function RootLayout({
         </html>
     );
 }
+
+
+export default UserLayout;

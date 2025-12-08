@@ -7,11 +7,11 @@ export const metadata = {
   description: "Project management tool",
 };
 
-export default function RootLayout({
+const PublicLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
 
 
   return (
@@ -29,3 +29,6 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+export default PublicLayout;
