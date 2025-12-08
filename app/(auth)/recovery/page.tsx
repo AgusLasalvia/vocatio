@@ -26,7 +26,7 @@ const RecoveryPage = () => {
                 </div>
                 <div className="form" >
 
-                    <h1>Recovery</h1>
+                    {/* <h1>Recovery</h1> */}
                     <p>To reset your password, please enter your email below.</p>
 
                     <div className="form-group">
@@ -38,7 +38,7 @@ const RecoveryPage = () => {
                             maxLength={30}
                             onChange={(e) => setEmail(e.target.value)} />
                     </div>
-                    <input className="form-submit-btn" type="button" onClick={handleSubmit} value="Sign Up" />
+                    <input className="form-submit-btn" type="button" onClick={handleSubmit} value="Recover" />
                 </div>
 
             </div>
