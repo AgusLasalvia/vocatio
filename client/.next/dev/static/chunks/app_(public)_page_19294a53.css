@@ -1,0 +1,260 @@
+/* [project]/app/(public)/page.css [app-client] (css) */
+.home-page {
+  background: #fff;
+  width: 100%;
+  min-height: 100dvh;
+}
+
+.hero-section {
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 3rem 2rem 6rem;
+  display: flex;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  color: #000;
+  letter-spacing: -.02em;
+  margin: 0 0 2rem;
+  font-family: Playfair Display, serif;
+  font-size: clamp(2.75rem, 8vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  color: #525252;
+  max-width: 750px;
+  margin: 0 auto 3rem;
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  display: flex;
+}
+
+.btn-primary, .btn-secondary {
+  letter-spacing: .01em;
+  border: 2px solid #0000;
+  border-radius: 8px;
+  padding: 1rem 2.5rem;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .25s;
+  display: inline-block;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #000;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.btn-primary:hover {
+  background: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px #00000026;
+}
+
+.btn-secondary {
+  color: #000;
+  background: #fff;
+  border-color: #000;
+  box-shadow: 0 2px 8px #0000000d;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px #00000026;
+}
+
+.btn-primary.large {
+  padding: 1.125rem 3rem;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.features-section {
+  background: #fafafa;
+  border-top: 1px solid #e5e5e5;
+  padding: 8rem 0;
+}
+
+.section-title {
+  color: #000;
+  text-align: center;
+  letter-spacing: -.02em;
+  margin: 0 0 4rem;
+  font-family: Playfair Display, serif;
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  font-weight: 700;
+}
+
+.features-grid {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  display: grid;
+}
+
+.feature-card {
+  background: #fff;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  transition: all .3s;
+  position: relative;
+}
+
+.feature-card:before {
+  content: "";
+  background: #000;
+  height: 3px;
+  transition: transform .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+}
+
+.feature-card:hover {
+  border-color: #000;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px #0000001a;
+}
+
+.feature-card:hover:before {
+  transform: scaleX(1);
+}
+
+.feature-icon {
+  color: #fff;
+  background: #000;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 2rem;
+  transition: transform .3s;
+  display: flex;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.05)rotate(5deg);
+}
+
+.feature-card h3 {
+  color: #000;
+  margin: 0 0 1rem;
+  font-family: Inter, sans-serif;
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #525252;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.cta-section {
+  text-align: center;
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
+  padding: 8rem 2rem;
+}
+
+.cta-section h2 {
+  color: #000;
+  letter-spacing: -.02em;
+  margin: 0 0 1.25rem;
+  font-family: Playfair Display, serif;
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  font-weight: 700;
+}
+
+.cta-section p {
+  color: #525252;
+  margin: 0 0 2.5rem;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding: 6rem 1.5rem 4rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .btn-primary, .btn-secondary {
+    text-align: center;
+  }
+
+  .features-section {
+    padding: 5rem 0;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .feature-card {
+    padding: 2.5rem 2rem;
+  }
+
+  .cta-section {
+    padding: 5rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .features-section {
+    padding: 4rem 0;
+  }
+
+  .feature-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .cta-section {
+    padding: 4rem 1rem;
+  }
+}
+
+/*# sourceMappingURL=app_%28public%29_page_19294a53.css.map*/

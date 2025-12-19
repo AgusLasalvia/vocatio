@@ -9,7 +9,7 @@ const Hamburguer = () => {
 
     return (
         <>
-            {/* Botón hamburguesa */}
+
             {!open && (
                 <button
                     className="hamburguer-button"
@@ -37,7 +37,7 @@ const Hamburguer = () => {
                 <div className="menu-center">
                     <Link href="/">Home</Link>
                     <Link href="/product">Product</Link>
-                    <Link href="/#faq">FAQ</Link>
+                    <Link href="/faq">FAQ</Link>
                     <Link href="/about">About</Link>
 
                 </div>

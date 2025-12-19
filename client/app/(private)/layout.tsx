@@ -1,10 +1,11 @@
 import "@/app/globals.css";
 
 import SideBar from "@/components/ui/desktop/Sidebar";
+import MobileSidebar from "@/components/ui/mobile/Sidebar";
 
 export const metadata = {
-    title: "Blumenfeld Project",
-    description: "Project management tool",
+    title: "Vocatio - Panel de Control",
+    description: "Plataforma de gestión para organizaciones",
 };
 
 const UserLayout = ({
@@ -14,17 +15,21 @@ const UserLayout = ({
 }>) => {
 
     return (
-        <html lang="en">
+        <html lang="es">
             <head>
-                <title>Blumenfeld Project</title>
+                <title>Vocatio - Panel de Control</title>
             </head>
-            <body >
-                <header>
-                    <input type="text" />
-                </header>
+            <body>
+                {/* Desktop Sidebar */}
+                <div className="desktop-only">
+                    <SideBar />
+                </div>
 
-                {/* Sidebar here */}
-                <SideBar />
+                {/* Mobile Sidebar */}
+                <div className="mobile-only">
+                    <MobileSidebar />
+                </div>
+
                 {children}
             </body>
         </html>

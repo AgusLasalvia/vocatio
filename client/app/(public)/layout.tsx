@@ -3,8 +3,8 @@ import Navbar from "@/components/ui/desktop/Navbar";
 import Hamburguer from "@/components/ui/mobile/Hamburguer";
 
 export const metadata = {
-  title: "Blumenfeld Project",
-  description: "Project management tool",
+  title: "Vocatio - Gestión de Personas, Eventos y Donaciones",
+  description: "La plataforma más simple para gestionar personas, eventos y donaciones de tu organización",
 };
 
 const PublicLayout = ({
@@ -17,7 +17,7 @@ const PublicLayout = ({
   return (
     <html lang="en">
       <head>
-        <title>Blumenfeld Project</title>
+        <title>Vocatio - Gestión de Personas, Eventos y Donaciones</title>
       </head>
       <body >
         <header>
